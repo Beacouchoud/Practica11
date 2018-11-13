@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <title>Formulario</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
     <script src="main.js"></script>
@@ -15,40 +15,182 @@
             <td>Tratamiento: * <br> 
                 <input type="radio" name="radio" value="1">Sr.
                 <input type="radio" name="radio" value="2">Sra.</td>
-            <td>Nombre: * <input type="text" name="nombre" required></td>
-            <td>Apellido 1: * <input type="text" name="nombre" required></td>
-            <td>Apellido 2: <input type="text" name="nombre" required></td>
+            <td>Nombre: * <br> <input type="text" name="nombre" required></td>
+            <td>Apellido 1: * <br> <input type="text" name="nombre" required></td>
+            <td>Apellido 2: <br> <input type="text" name="nombre" required></td>
         </tr>
         <tr>
-            <td>Tipo Doc: *</td>
-            <td>Nº doc: * <input type="text" name="nombre" required></td>
-            <td>Fecha de nacimiento: * <input type="date" name="fecha" size="20"></td>
+            <td>Tipo Doc: * <br>
+                <select name="menu" class="gris" >
+                        <option value="0">D.N.I.</option>
+                        <option value="1">Uno</option>
+                        <option value="2">Dos</option>
+                        <option value="3">Tres</option>
+                </select>
+            </td>
+            <td>Nº doc: * <br> <input type="text" name="nombre" required></td>
+            <td>Fecha de nacimiento: * <br> <input type="date" name="fecha" size="20"></td>
             <td></td>
         </tr>
         <tr>
-            <td>País de nacimiento: *</td>
+            <td>País de nacimiento: * <br>
+                <select name="menu" class="gris">
+                        <option value="0">ESPAÑA</option>
+                        <option value="1">Uno</option>
+                        <option value="2">Dos</option>
+                        <option value="3">Tres</option>
+                </select>
+            </td>
             <td>Nacionalidad: * <br>
-                    <select name="menu">
+                <select name="menu" class="gris">
+                    <option value="0">ESPAÑA</option>
+                    <option value="1">Uno</option>
+                    <option value="2">Dos</option>
+                    <option value="3">Tres</option>
+                </select>
+            </td>
+            <td>Segunda nacionalidad: <br>
+                <select name="menu" class="gris">
+                    <option value="0">Ninguna</option>
+                    <option value="1">Uno</option>
+                    <option value="2">Dos</option>
+                    <option value="3">Tres</option>
+                </select>
+            </td>
+            <td>País residencia fiscal: * <br>
+                <select name="menu" class="gris">
                     <option value="0">...</option>
                     <option value="1">Uno</option>
                     <option value="2">Dos</option>
                     <option value="3">Tres</option>
-                  </select></td>
-            <td>Segunda nacionalidad:</td>
-            <td>País residencia fiscal: *</td>
+                </select>
+            </td>
         </tr>
         <tr>
-            <td>Trabajo*</td>
-            <td>Tipo de Actividad*</td>
-            <td>Sector Profesional*</td>
-            <td>Empresa: * <input type="text" name="nombre" required></td>
+            <td>Trabajo* <br>
+                <select name="menu" class="gris">
+                    <option value="0">...</option>
+                    <option value="1">Uno</option>
+                    <option value="2">Dos</option>
+                    <option value="3">Tres</option>
+                </select>
+            </td>
+            <td>Tipo de Actividad* <br>
+                <select name="menu" class="gris">
+                    <option value="0">  </option>
+                    <option value="1">Tareas hogar</option>
+                    <option value="2">Estudiante</option>
+                    <option value="3">Desempleado</option>
+                    <option value="4">Jubilado</option>
+                    <option value="5">Pensionista</option>
+                </select>
+            </td>
+            <td>Sector Profesional* <br>
+                <select name="menu" class="gris">
+                    <option value="0">   </option>
+                    <option value="1">No trabaja</option>
+                    <option value="2">Banca</option>
+                    <option value="3">Construcción</option>
+                    <option value="4">Energía</option>
+                    <option value="5">Industría</option>
+                    <option value="6">Recursos humanos</option>
+                    <option value="7">Servicios</option>
+                </select>
+            </td>
+            <td>Empresa: * <br> <input type="text" name="nombre" required></td>
         </tr>
         <tr>
-            <td>Propósito de la cuenta: *</td>
-            <td>Origen de sus ahorros: *</td>
+            <td>Propósito de la cuenta: * <br>
+                <select name="menu" class="gris">
+                    <option value="0">Ahorro</option>
+                    <option value="1">Uno</option>
+                    <option value="2">Dos</option>
+                    <option value="3">Tres</option>
+                </select>
+            </td>
+            <td>Origen de sus ahorros: * <br>
+                <select name="menu" class="gris">
+                    <option value="0">Nómina o pensión</option>
+                    <option value="1">Uno</option>
+                    <option value="2">Dos</option>
+                    <option value="3">Tres</option>
+                </select>
+            </td>
             <td></td>
             <td></td>
         </tr>
     </table>
+    <div class="container">
+        <table>
+            <tr>
+                <td>Tipo de via* <br>
+                <select name="menu" class="gris">
+                    <option value="0">...</option>
+                    <option value="1">Uno</option>
+                    <option value="2">Dos</option>
+                    <option value="3">Tres</option>
+                </select>
+                </td>
+                <td colspan="2">Dirección* <br> <input class="dir" type="text" name="nombre" required></td>
+                <td>
+                    <table>
+                        <tr class="subtabla"><td class="subtabla">Número* <br> <input class="subtabla" type="text" name="nombre" required></td></tr>
+                        <tr class="subtabla"><td class="subtabla">Piso <br> <input class="subtabla" type="text" name="nombre" required></td></tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>Urb./Pob./Otros <br> <input type="text" name="nombre" required></td>
+                <td>Localidad* <br> <input type="text" name="nombre" required></td>
+                <td>Provincia* <br>
+                    <select name="menu" class="gris">
+                        <option value="0">...</option>
+                        <option value="1">Uno</option>
+                        <option value="2">Dos</option>
+                        <option value="3">Tres</option>
+                    </select>
+                </td>
+                <td>Código Postal* <br> <input type="text" name="nombre" required></td>
+            </tr>
+            <tr>
+                <td>Teléfono móvil: * <br> <input type="text" name="nombre" required></td>
+                <td>Teléfono particular: <br> <input type="text" name="nombre" required></td>
+                <td colspan="2">Dirección de e-mail: * <br> <input class="dir" type="text" name="nombre" required></td> 
+                <td></td>
+            </tr>
+            <tr></tr>
+        </table>
+    </div>
+    <hr>
+    <section>
+        <div class="container2">
+            <p>Para ofrecerle un mejor servicio nos sería útil conocer si posee en otra entidad: <br>
+                <input type="checkbox" name="casilla">Plan de pensiones
+                <input type="checkbox" name="casilla">Fondos
+                <input type="checkbox" name="casilla">Acciones
+                <input type="checkbox" name="casilla">Hipoteca
+                <input type="checkbox" name="casilla">Préstamo
+                <input type="checkbox" name="casilla">Seguro de Vida   
+            </p>
+        </div>
+    </section>
+    <hr>
+    <section>
+        <div class="container3">
+        <div class="uno">
+            <p>Puede consultar en nuestra Web o solicitarnos toda la 
+               Información Precontractual de nuestros productos. 
+               Al pulsar "Continuar" está aceptando la Cláusula de Protección de datos.
+                
+            <p>
+               (*) Los campos marcados con asterisco son obligatorios.
+            </p>
+        </div>
+        <div class="dos">
+            <button type="button" onclick="mensaje('Ha pulsado el botón')">Continuar</button></p>
+        </div>
+        </div>
+    </section>
+
 </body>
 </html>
