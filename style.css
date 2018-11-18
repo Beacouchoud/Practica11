@@ -55,7 +55,7 @@ div.dos{
     display: inline-block;
     
 }
-.button1{
+.boton{
     
     width: 150px;
     height: 50px;
@@ -64,7 +64,7 @@ div.dos{
     color: white;
     border-radius: 2px;
     font-family: 'Courier New', Courier, monospace;
-    font-size: 100%;
+    font-size: 120%;
 }
 a{
     color: white;
@@ -101,8 +101,15 @@ body.formulario{
 .formulario td{
     padding: 2%;
 }
-.formulario .bform{
+.formulario .boton{
     font-size: 160%;
+    width: 150px;
+    height: 50px;
+    background-color: orangered;
+    margin-left: 80%;
+    color: white;
+    border-radius: 2px;
+    font-family: 'Courier New', Courier, monospace;
 }
 .formulario a{
     color: #333340;
